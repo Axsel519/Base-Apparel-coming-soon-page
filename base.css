@@ -1,0 +1,231 @@
+    /*public*/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+    --Font-size: 16px;
+
+
+}
+
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400; 
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)), 
+    linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+background-blend-mode: overlay;
+
+
+}
+
+
+h1 {
+    font-weight: 600;
+    color: var(--Dark-Grayish-Red);
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 0.1em;
+    width: 1vw;
+}
+
+h2{
+    color: var(--Desaturated-Red);
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+
+}
+
+p {
+    font-weight: 300;
+    font-size: var(--Font-size);
+    color: var(--Desaturated-Red);
+    width: 30vw;
+    font-weight: bold;
+}
+
+    /*start code*/
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+    /*right imge*/
+
+ .right .image img {
+    height: 100vh;
+}
+
+    /*left code*/
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 5vh 16.5vw;
+    background-image: url(base-apparel-coming-soon-master/images/bg-pattern-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Paragraph {
+    padding: 3vh 0vw;
+}
+
+input {
+    width: 25vw;
+    height: 5vh;
+    border: 2px solid gainsboro;
+    border-radius: 2vw;
+    padding: 3vh 1vw;
+
+}
+
+.inp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+button.send {
+    width: 5vw;
+    height: 3vw;
+    background-color: hsl(0deg 78.72% 81.57%);
+    border: 2px solid hsl(0deg 78.72% 81.57%);
+    border-radius: 2vw;
+    margin-left: -5vw;
+    position: absolute;
+    right: 57vw;
+}
+
+.error {
+    margin: 0vh -7vw;
+}
+
+small {
+    margin-top: 75vh;
+    padding: 0vh 1vw;
+    color: red;
+    position: absolute;
+}
+
+    /*Thank you message when registration is successful*/
+
+.succeed {
+    text-align: center;
+    padding: 5vh 0;
+    display: none; 
+    background-image: 
+    url("https://img.freepik.com/free-vector/cyber-data-security-online-concept-illustration-internet-security-information-privacy-protection_1150-37330.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw; 
+
+}
+
+.succeed h1{
+    background-color: #ddd;
+    color: black;
+    width: 30vw;
+    padding: 1vh 1vw;
+    margin: 25vh 35vw;
+}
+
+.right .logo {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+
+    .right .image img {
+        content: url(base-apparel-coming-soon-master/images/hero-mobile.jpg);
+        width:100vw;
+        height: auto;   
+        max-height: 50vh;   
+        object-fit: cover;
+
+    }
+
+    .left .logo {
+        display: none;
+    }
+    
+    .right .logo {
+        display: block;
+        padding: 5vh 5vw;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .Titles {
+        text-align: center;
+    }
+
+    h1 {
+        width: 60vw;
+        text-align: center;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    p {
+        width: 59vw;
+        text-align: center;
+    }
+
+    input {
+        width: 60vw;
+        height: 2vh;
+        border: 2px solid gainsboro;
+        border-radius: 5vw;
+        padding: 3vh 5vw;
+    }
+
+    button.send {
+        width: 15vw;
+        height: 12vw;
+        border-radius: 5vw;
+        margin-left: 0vw;
+        right: 20vw;
+    }
+
+    .error {
+        margin: 0vh -20vw;
+    }
+
+    small {
+        margin-top: 53vh;
+    }
+
+    .succeed h1 {
+        margin: 32vh 20vw;
+        width: 70vw;
+        font-size: 8vw;
+    }
+
+    
+}
